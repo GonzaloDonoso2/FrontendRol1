@@ -324,6 +324,9 @@ function registrarPersonaje() {
                         success: function (respuesta) {
                             
                             if (respuesta === "El personaje fue registrado de manera exitosa.") {
+                                
+                                $("#botonRegistrar").addClass("btn-outline-success").removeClass("btn-success");
+                                document.getElementById("botonRegistrar").setAttribute("disabled", true);
 
                                 let mensaje = respuesta;
                                 $("#alertaVisual").addClass("alert-success").removeClass("alert-danger").removeClass("alert-warning");

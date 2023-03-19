@@ -197,7 +197,7 @@
                             <label for="etiquetaPenalizacionMovimientoPorTurnoArmadura"><b>Penalización Movimiento Por Turno</b></label>
                         </div>
                         <br>
-                        <button class="btn btn-success" type="button" onclick="registrarPersonaje()"><b>REGISTRAR PERSONAJE</b></button>
+                        <button class="btn btn-success" id="botonRegistrar" onclick="registrarPersonaje()" type="button"><b>REGISTRAR PERSONAJE</b></button>
                     </div>
                 </div>
             </div>  
