@@ -2,7 +2,7 @@ let URL = window.location.toString();
 let frontendURL;
 let backendURL;
 
-if (URL === "https://frontendrol1.herokuapp.com/") {
+if (URL === "https://frontendrol1.herokuapp.com/index.php") {
 
     frontendURL = "https://frontendrol1.herokuapp.com";
     backendURL = "https://backendrol1.herokuapp.com";

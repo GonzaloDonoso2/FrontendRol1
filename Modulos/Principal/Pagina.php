@@ -29,6 +29,9 @@
                             <li class="nav-item">
                                 <a class="btn nav-link active" aria-current="page" onclick="irPagina('Tiradas')">Tiradas</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="btn nav-link" aria-current="page" onclick="irPagina('Batallas')">Batallas</a>
+                            </li> 
                         </ul>
                     </div>
                     <a class="btn nav-link" aria-current="page" onclick="terminarSesion()" style="color: #842029;"><b>Terminar Sesión</b></a>

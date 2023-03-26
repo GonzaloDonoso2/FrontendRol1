@@ -11,19 +11,26 @@
         <title>Perro Negro sitio web</title>
     </head>
     <body>
-        <!--Este <nav></nav> contiene el menú de opciones.-->      
-        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#6B6B6B;">               
-            <div class="container-fluid">
-                <img height="50px" src="../../Imagenes/LogotipoEmpresa.png" width="50px">
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page">Perro Negro sitio web</a>
-                        </li>
-                    </ul>
+        <header class="sticky-top">
+            <!--Este <nav></nav> contiene el menú de opciones.-->      
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#6B6B6B;">               
+                <div class="container-fluid">
+                    <img height="50px" src="../../Imagenes/LogotipoEmpresa.png" width="50px">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page">Perro Negro sitio web</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
+            <!--Este <div></div> contiene la alerta visual.-->
+            <div class="alert alert-success alert-dismissible show" id="alertaVisual" role="alert">
+                <p><b id="mensajeAlertaVisual">Ha comenzado una batalla...</b></p>
+                <button aria-label="Close" class="btn-close" id="botonOcultarAlertaVisual" onclick="ocultarAlertaVisual()" type="button"></button>
             </div>
-        </nav>
+        </header>        
         <main>
             <!--Este <div></div> contiene el panel con el mensaje de carga para el jugador.-->
             <div class="modal fade" id="panelMensajeCarga" tabindex="-1">
@@ -41,16 +48,11 @@
                         </div>                        
                     </div>
                 </div>
-            </div>
-            <!--Este <div></div> contiene la alerta visual.-->
-            <div class="alert alert-success alert-dismissible show" id="alertaVisual" role="alert">
-                <p><b id="mensajeAlertaVisual">Ha comenzado una batalla...</b></p>
-                <button aria-label="Close" class="btn-close" id="botonOcultarAlertaVisual" onclick="ocultarAlertaVisual()" type="button"></button>
-            </div>
+            </div>           
             <!--Este <div></div> contiene el tablero de juego.-->
             <div id="contenedorTablero" style="position: relative;">
                 <img id="imagenTablero" src="../../Imagenes/Tablero.png">        
-                <div style="left: 238px; position:absolute; top: 1px; z-index: 0;">
+                <!--<div style="left: 238px; position:absolute; top: 1px; z-index: 0;">
                     <form class="form-floating">
                         <input class="form-control" id="campoNombreJugador" readonly style="text-align: center;" type="text">
                         <label for="campoIndicadorTurno">Turno del jugador</label>
@@ -160,7 +162,7 @@
                         <input class="form-control" id="campoSaludPersonaje2" readonly style="height: 52px; text-align: center; width: 128px;" type="text">
                         <label for="campoSaludPersonaje2"><i class="fa-solid fa-heart"></i> Salud:</label>
                     </form>
-                </div> 
+                </div>--> 
             </div>
             <!--Este <div></div> contiene el panel con el mensaje de carga para el jugador.-->
             <div class="modal fade" id="panelMensajeCarga" tabindex="-1">

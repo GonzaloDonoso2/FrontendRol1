@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     //validarInicioSesion();
     crearPosiciones();        
-    iniciarBatalla();
+    //iniciarBatalla();
 });     
 
 function validarInicioSesion() {
@@ -15,8 +15,8 @@ function validarInicioSesion() {
 
     } else {
         
-        crearPosiciones();        
-        iniciarBatalla();
+        //crearPosiciones();        
+        //iniciarBatalla();
     }
 }
 
