@@ -4,7 +4,7 @@ let backendURL;
 
 console.log(URL);
 
-if (URL === "https://frontendrol1.herokuapp.com/index.php") {
+if (URL === "https://frontendrol1.herokuapp.com") {
 
     frontendURL = "https://frontendrol1.herokuapp.com";
     backendURL = "https://backendrol1.herokuapp.com";
