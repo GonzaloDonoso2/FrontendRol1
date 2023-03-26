@@ -2,6 +2,8 @@ let URL = window.location.toString();
 let frontendURL;
 let backendURL;
 
+console.log(URL);
+
 if (URL === "https://frontendrol1.herokuapp.com/index.php") {
 
     frontendURL = "https://frontendrol1.herokuapp.com";
