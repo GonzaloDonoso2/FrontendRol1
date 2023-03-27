@@ -183,8 +183,9 @@
                         <select class="form-control" id="listaArmaduras" onchange="puntuacionArmadura()">
                             <option value="0">Seleccione su Armadura</option>
                             <option value="1">ARMADURA LIGERA</option>
-                            <option value="2">ARMADURA MEDIANA</option>
-                            <option value="3">ARMADURA PESADA</option>
+                            <option value="2">ARMADURA LIGERA</option>
+                            <option value="3">ARMADURA MEDIANA</option>
+                            <option value="4">ARMADURA PESADA</option>
                         </select>
                         <br>
                         <div class="form-floating">                                    

@@ -56,6 +56,8 @@ function obtenerPersonaje(){
         method: "GET",
         success: function (provisoriaRespuesta) {
             
+            console.log(provisoriaRespuesta);
+            
             if (provisoriaRespuesta !== "Sin Personajes Registrados.") {
 
                 let respuesta = JSON.parse(provisoriaRespuesta);
@@ -354,24 +356,29 @@ function puntuacionArmadura() {
 
     if (armadura != 0 && armadura === 1) {
 
-        defensa = 4;
+        defensa = 0;
         penalizacionAgilidad = 0;
         penalizacionMovimientoPorTurno = 0;
 
 
     } else if (armadura != 0 && armadura === 2) {
 
-        defensa = 6;
-        penalizacionAgilidad = 10;
+        defensa = 4;
+        penalizacionAgilidad = 0;
         penalizacionMovimientoPorTurno = 0;
 
 
     } else if (armadura != 0 && armadura === 3) {
 
+        defensa = 6;
+        penalizacionAgilidad = 10;
+        penalizacionMovimientoPorTurno = 0;
+
+    } else if (armadura != 0 && armadura === 4) {
+
         defensa = 8;
         penalizacionAgilidad = 20;
         penalizacionMovimientoPorTurno = 1;
-
     }
 
     $("#etiquetaDefensaArmadura").val(defensa);
