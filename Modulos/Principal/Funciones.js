@@ -47,7 +47,7 @@ function obtenerPersonaje(){
     
     let usuario = {
         
-      "id": sessionStorage.getItem("idUsuario")  
+      "id": parseInt(sessionStorage.getItem("idUsuario")) 
     };
     
     let backendURL = sessionStorage.getItem("backendURL");
@@ -60,7 +60,7 @@ function obtenerPersonaje(){
             
             console.log(provisoriaRespuesta);
             
-            /*if (provisoriaRespuesta !== "Sin Personajes Registrados.") {
+            if (provisoriaRespuesta !== "Sin Personajes Registrados.") {
 
                 let respuesta = JSON.parse(provisoriaRespuesta);
                 
@@ -108,7 +108,7 @@ function obtenerPersonaje(){
                 let mensaje = ", puedes crear un nuevo personaje.";
                 mostrarSaludoInicial(mensaje);
                 $("#panelMensajeCarga").modal("hide");  
-            }*/
+            }
         }
     });         
 }
