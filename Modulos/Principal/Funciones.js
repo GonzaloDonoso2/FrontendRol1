@@ -60,7 +60,7 @@ function obtenerPersonaje(){
             
             console.log(provisoriaRespuesta);
             
-            /*if (provisoriaRespuesta !== "Sin Personajes Registrados.") {
+            if (provisoriaRespuesta !== "Sin Personajes Registrados.") {
 
                 let respuesta = JSON.parse(provisoriaRespuesta);
                 
@@ -95,6 +95,8 @@ function obtenerPersonaje(){
                     document.getElementById("listaArmasPrimaria").setAttribute("disabled", true);
                     document.getElementById("listaArmasSecundaria").setAttribute("disabled", true);
                     document.getElementById("listaArmaduras").setAttribute("disabled", true);
+                    let imagenRetrato = "../../Imagenes/Personajes/Retratos/" + respuesta[0].retrato + ".jpg";
+                    document.getElementById("retratoPersonaje").src = imagenRetrato;
                     $("#botonRegistrar").addClass("btn-outline-success").removeClass("btn-success");
                     document.getElementById("botonRegistrar").setAttribute("disabled", true);
                     let mensaje = ", ya tienes un personaje previamente registrado.";
@@ -108,7 +110,7 @@ function obtenerPersonaje(){
                 let mensaje = ", puedes crear un nuevo personaje.";
                 mostrarSaludoInicial(mensaje);
                 $("#panelMensajeCarga").modal("hide");  
-            }*/
+            }
         }
     });         
 }

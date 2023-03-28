@@ -3,15 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
-        <!--Estos <links> contienen la CDN de Bootstrap que dan estilo e iconos a la página web.-->
+        <!--Estos <links> contien la CDN de Bootstrap que dan estilo e iconos a la página web.-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-        
-        <!--Estos <links> contienen.-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">        
+        <!--Estos <links> contienen las librerías externas que convierten un select normal en un select 2.-->
         <link rel="stylesheet" href="../../LibreriasExternas/Select2/css/select2.min.css">
-        <link rel="stylesheet" href="../../LibreriasExternas/Select2/css/select2-bootstrap.min.css">
-        
-        <!--Este <script></script> contienen la CDN de Font Awesome que dan iconos a la página web.-->
+        <link rel="stylesheet" href="../../LibreriasExternas/Select2/css/select2-bootstrap.min.css">        
+        <!--Este <script></script> contiene la CDN de Font Awesome que dan iconos a la página web.-->
         <script src="https://kit.fontawesome.com/06c09b3cfb.js" crossorigin="anonymous"></script>
         <title>Perro Negro sitio web</title>
     </head>
@@ -70,7 +68,7 @@
                             <label for="campoNombrePersonaje"><b>Nombre del Personaje</b></label>
                         </div>
                         <br>
-                        <img class="img-fluid rounded-start" id="retratoPersonaje" src="../../Imagenes/Personaje.jpg" style="border-style: solid; border-radius: 5px; border-width: 1px; height: 243px; width: 190px;">                                 
+                        <img class="img-fluid rounded-start" id="retratoPersonaje" src="../../Imagenes/Personajes/Retratos/personaje.jpg" style="border-style: solid; border-radius: 5px; border-width: 1px; height: 243px; width: 190px;">                                 
                     </div>
                     <div class="col" style="text-align: center;">
                         <div class="form-floating">                                    
@@ -182,7 +180,7 @@
                     <div class="col">
                         <select class="form-control" id="listaArmaduras" onchange="puntuacionArmadura()">
                             <option value="0">Seleccione su Armadura</option>
-                            <option value="1">ARMADURA LIGERA</option>
+                            <option value="1">SIN ARMADURA</option>
                             <option value="2">ARMADURA LIGERA</option>
                             <option value="3">ARMADURA MEDIANA</option>
                             <option value="4">ARMADURA PESADA</option>
@@ -206,14 +204,12 @@
                 </div>
             </div>  
         </main>
-        <!--Este <script></script> contien la CDN de jQuery que dan funcionalidades a la página web.-->
+        <!--Este <script></script> contiene la CDN de jQuery que dan funcionalidades a la página web.-->
         <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-        <!--Este <script></script> contien la CDN de Bootstrap que dan funcionalidades a la página web.-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
-        
-        <!--Este <script></script> contien.-->
-        <script src="../../LibreriasExternas/Select2/js/select2.full.min.js"></script>
-        
+        <!--Este <script></script> contiene la CDN de Bootstrap que dan funcionalidades a la página web.-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>         
+        <!--Este <script></script> contiene las librerías externas que convierten un select normal en un select 2. contien.-->
+        <script src="../../LibreriasExternas/Select2/js/select2.full.min.js"></script>        
         <script src="Funciones.js"></script>
         <script src="../../Funciones/FuncionesComunes.js"></script>
     </body>
