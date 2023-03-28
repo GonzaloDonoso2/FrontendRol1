@@ -14,6 +14,10 @@ function validarInicioSesion() {
         $("#panelMensajeCarga").modal("show");        
         obtenerArmas();
         obtenerPersonaje();
+        setTimeout(function () {
+
+           $("#panelMensajeCarga").modal("hide");      
+        }, 2000);
     }
 }
 
@@ -101,15 +105,13 @@ function obtenerPersonaje(){
                     document.getElementById("botonRegistrar").setAttribute("disabled", true);
                     let mensaje = ", ya tienes un personaje previamente registrado.";
                     mostrarSaludoInicial(mensaje);
-                    $("#panelMensajeCarga").modal("hide");                    
                 }
 
             } else {                
                 
                 convetirSelectSelect2();
                 let mensaje = ", puedes crear un nuevo personaje.";
-                mostrarSaludoInicial(mensaje);
-                $("#panelMensajeCarga").modal("hide");  
+                mostrarSaludoInicial(mensaje);  
             }
         }
     });         
