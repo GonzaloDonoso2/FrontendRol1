@@ -57,7 +57,7 @@ function terminarSesion() {
     }, 1000);
     setTimeout(function () {
 
-        location.href = frontendURL + "/" + "index.php";
+        location.href = frontendURL;
     }, 1500);
 }
 
